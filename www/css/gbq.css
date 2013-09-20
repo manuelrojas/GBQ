@@ -87,6 +87,21 @@ a {
     background: url(../img/sprite.png) -3px 0px no-repeat;      
 }
 
+.icon-dashboard {
+    background: url(../img/sprite.png) -175px 0px no-repeat;
+    float: none;
+}
+
+.icon-quiz {
+    background: url(../img/sprite.png) -215px 0px no-repeat;
+    float: none;
+}
+
+.icon-class {
+    background: url(../img/sprite.png) -255px 0px no-repeat;
+    float: none;
+}
+
 /* Login page styles */
 
 div.login {
@@ -195,4 +210,33 @@ div.ui-input-text {
   color: #ffffff;
   background-color: #baca21;
   border-color: #bacc11;
+}
+
+.ui-header{
+    padding: 5px;
+}
+
+.ui-footer table{
+    font: MyriadBold;
+    font-size: 12px;
+    color: #ffffff;
+    height: 80px;
+    text-align: center;
+    width: 100%;
+}
+
+.ui-footer td{
+    width: 33.33%;
+}
+
+.ui-footer td.dashboard{
+    background-color: #10b9d6;
+}
+
+.ui-footer td.quiz{
+    background-color: #f7a748;
+}
+
+.ui-footer td.clazz{
+    background-color: #624da0;
 }

@@ -2,24 +2,12 @@
  * Initializes the Home page
  * FirstFactory Inc. 2013
  */
-var index = {
+var dashboard = {
     // Application Constructor
     initialize: function() {
         this.bindEvents();
         
-        $('#homepage').on('pagebeforeshow',function(){
-        });
-        
-        $('#homepage').on('pageshow',function(){
-          $('#btn_login').unbind('click').bind('click',function(){
-            //callNativeFBLogin( 'SUCCESS' )
-              alert('facebook should go here');
-          });
-          $('#btn_kaplan').unbind('click').bind('click',function(){
-                $.mobile.changePage( "./dashboard.html");
-          });
-                          
-        });
+
         
     },
     // Bind Event Listeners
