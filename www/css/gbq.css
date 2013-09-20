@@ -71,8 +71,13 @@ a {
 }
 
 .icon-kaplan {
-    background: url(../img/sprite.png) 0px -1px no-repeat;
+    background: url(../img/sprite.png) 0 -1px no-repeat;
+}
+.icon-kaplan-login{
+    background: url(../img/sprite.png) 0 -180px no-repeat;
     float: none;
+    height: 100px;
+    width: 90px;
 }
 .icon-settings {
     background: url(../img/sprite.png) -38px 0px no-repeat; 
