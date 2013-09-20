@@ -13,7 +13,7 @@
     </head>
     <body>
         <div class="app">
-            <!-- HOME PAGE -->
+            <!-- LOGIN PAGE -->
             <section data-role="page" id="homepage">
                 <script>
                     var userprofile;
@@ -35,20 +35,19 @@
                         FBPlugin.callFacebookLogin( nativePluginResultHandler, nativePluginErrorHandler, returnSuccess );
                     }
                 </script>
-                <div data-role="header" data-position="fixed" data-id="foo">
-                    <i class="icon icon-kaplan"></i>
-                    <i class="icon icon-settings"></i>
-                    <h1>Welcome Back!</h1>
-                </div>
                 <div data-role="content">
                     <div class="login">
-                        <input type="text"placeholder="User Name">
-                        <input type="password" placeholder="Password">
+                        <div class="login-header login-text-center">
+                            <i class="icon icon-kaplan"></i>
+                            <h1>GAMIFY QUIZ BANK</h1>
+                        </div>
+                        <input id="login-uid" type="text"placeholder="User Name">
+                        <input id="login-pwd" type="password" placeholder="Password">
                     </div>
-                    <a href="#" class="btn btn-kaplan" data-role="button" data-mini="true" id="btn_kaplan">Kaplan Login</a>
-                    <a href="#" class="btn btn-fb" data-role="button" data-mini="true" id="btn_login">Facebook Login</a>
+                    <a href="#" class="btn btn-kaplan" data-role="button" id="btn_kaplan">Login</a>
+                    <div class="login-text-center" style="color:#999999">or login with</div>
+                    <a href="#" class="btn btn-fb" data-role="button" id="btn_login">Facebook</a>
                 </div>
-                <div data-role="footer" data-position="fixed" data-id="foo1"></div>
                 <script src="js/index.js"></script>
                 <!-- put the page initialization .js here -->
                 <script type="text/javascript">

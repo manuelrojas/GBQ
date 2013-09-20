@@ -5,7 +5,9 @@
 *
 */
 
-@font-face {font-family: HelveticaNeue; src: url('../fonts/HelveticaNeue.ttf')}	
+@font-face {font-family: HelveticaNeue; src: url('../fonts/HelveticaNeue.ttf')}
+@font-face {font-family: MyriadBold; src: url('../fonts/myriadprobold.ttf')}
+@font-face {font-family: MyriadRegular; src: url('../fonts/myriadproregular.ttf')}
 
 
 body {
@@ -69,7 +71,8 @@ a {
 }
 
 .icon-kaplan {
-    background: url(../img/sprite.png) 0px -1px no-repeat;    
+    background: url(../img/sprite.png) 0px -1px no-repeat;
+    float: none;
 }
 .icon-settings {
     background: url(../img/sprite.png) -38px 0px no-repeat; 
@@ -79,6 +82,43 @@ a {
     background: url(../img/sprite.png) -3px 0px no-repeat;      
 }
 
+/* Login page styles */
+
+div.login {
+    font-family: myriadregular;
+    color: #ACACAC;
+    margin: 10px;
+}
+
+div.login input[type="text"],
+div.login input[type="password"] {
+    border: 1px solid #ccc;
+    font-size: 16px;
+    padding: 5px;
+}
+
+div.login input[type="text"]{
+    border-bottom: none;
+    border-radius: 10px 10px 0 0;
+    -webkit-border-radius: 10px 10px 0 0;
+}
+
+div.login input[type="password"]{
+    border-radius: 0 0 10px 10px;
+    -webkit-border-radius: 0 0 10px 10px;
+}
+div.ui-input-text {
+    margin: 0;
+    padding: 0;
+}
+
+.login-header{
+    width:100%;
+}
+
+.login-text-center{
+    text-align:center;
+}
 
 /*GBQ Styles*/
 .ui-bar-a {
@@ -100,35 +140,14 @@ a {
 }
 
 
-div.login {
-	margin: 10px;
-}
 
-div.login input[type="text"], 
-div.login input[type="password"] {
-	border: 1px solid #ccc;
-	padding: 5px;
-}
-
-div.login input[type="text"]{
-	border-bottom: none;
-	-webkit-border-radius: 5px 5px 0px 0px;
-} 
-
-div.login input[type="password"]{
-	-webkit-border-radius: 0px 0px 5px 5px;
-}
-div.ui-input-text {
-	margin: 0;
-  padding: 0;
-}
 
 
 /*Buttons*/
 .btn {
-  padding: 6px 12px;
+  padding: 2px 10px;
   margin-bottom: 0;
-  font-size: 14px;
+  font-size: 14px !important;
   font-weight: normal;
   line-height: 1.428571429;
   text-align: center;
@@ -136,13 +155,13 @@ div.ui-input-text {
   vertical-align: middle;
   cursor: pointer;
   border: 1px solid transparent;
-  border-radius: 4px;
+  border-radius: 10px;
 }
 
 
 .btn-fb {
   color: #ffffff;
-  background-color: #428bca;
+  background-color: #66669a;
   border-color: #357ebd;
 }
 
@@ -158,8 +177,10 @@ div.ui-input-text {
 
 .btn-kaplan {
   color: #ffffff;
-  background-color: #cadb2a;
+  background-color: #bece30;
   border-color: #bacc11;
+  margin-top: 20px;
+  margin-bottom: 30px;
 }
 
 .btn-kaplan:hover,

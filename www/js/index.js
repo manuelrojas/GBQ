@@ -8,16 +8,14 @@ var index = {
         this.bindEvents();
         
         $('#homepage').on('pagebeforeshow',function(){
-          //alert('pageshow');
         });
         
         $('#homepage').on('pageshow',function(){
-          $('#btn_login').unbind();
-          $('#btn_login').bind('click',function(){
-            callNativeFBLogin( 'SUCCESS' )
+          $('#btn_login').unbind('click').bind('click',function(){
+            //callNativeFBLogin( 'SUCCESS' )
+              alert('facebook should go here');
           });
-
-          $('#btn_kaplan').bind('click',function(){
+          $('#btn_kaplan').unbind('click').bind('click',function(){
                 $.mobile.changePage( "#home");   
           });
                           
@@ -40,6 +38,5 @@ var index = {
     },
     // Update DOM on a Received Event
     receivedEvent: function(id) {
-        //alert('device ready');
     }
 };
