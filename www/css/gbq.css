@@ -1,0 +1,172 @@
+/*!
+* FirstFactory Team
+* Manuel Rojas
+* GBQ v.0.0.1
+*
+*/
+
+@font-face {font-family: HelveticaNeue; src: url('../fonts/HelveticaNeue.ttf')}	
+
+
+body {
+	font-family: HelveticaNeue, Arial, sans-serif;
+}
+
+a {
+	text-decoration: none;
+}
+
+
+/*Utils*/
+
+.center {
+  margin: 0 auto;
+}
+
+.round-score {
+  background: #1c3664;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  border:20px solid #74ccd0;
+  text-align: center;
+  position: relative;
+}
+
+
+.round-score .title {
+    color: white;
+    font-size: 12px;
+    top: 10px;
+    left: 20px;
+    position: absolute;
+
+}
+
+.round-score .number {
+    position: absolute;
+    top: 30px;
+    left: 40px;
+    color: white;
+    font-size: 3em;
+}
+
+.round-score .number sup {
+    color: #9da6b1;
+    font-size: 24px;
+}
+
+
+/*Icon styles*/
+.icon {
+    float:left;
+    display: inline-block;
+    width: 36px;
+    height: 36px;
+    margin: 4px 8px;
+    line-height: 14px;
+    vertical-align: text-top;
+}
+
+.icon-kaplan {
+    background: url(../img/sprite.png) 0px -1px no-repeat;    
+}
+.icon-settings {
+    background: url(../img/sprite.png) -38px 0px no-repeat; 
+    float: right;   
+}
+.icon-youtube {
+    background: url(../img/sprite.png) -3px 0px no-repeat;      
+}
+
+
+/*GBQ Styles*/
+.ui-bar-a {
+	background-color: #efeeee;
+}
+
+.ui-bar-a,
+.ui-bar-a input,
+.ui-bar-a select,
+.ui-bar-a textarea,
+.ui-bar-a button {
+	font-family: HelveticaNeue, Arial, sans-serif;
+}
+
+.ui-header h1 {
+	color: #6d6c6c;
+	font-weight: 400;
+	text-shadow: 0px 1px 0 #fff;
+}
+
+
+div.login {
+	margin: 10px;
+}
+
+div.login input[type="text"], 
+div.login input[type="password"] {
+	border: 1px solid #ccc;
+	padding: 5px;
+}
+
+div.login input[type="text"]{
+	border-bottom: none;
+	-webkit-border-radius: 5px 5px 0px 0px;
+} 
+
+div.login input[type="password"]{
+	-webkit-border-radius: 0px 0px 5px 5px;
+}
+div.ui-input-text {
+	margin: 0;
+  padding: 0;
+}
+
+
+/*Buttons*/
+.btn {
+  padding: 6px 12px;
+  margin-bottom: 0;
+  font-size: 14px;
+  font-weight: normal;
+  line-height: 1.428571429;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  cursor: pointer;
+  border: 1px solid transparent;
+  border-radius: 4px;
+}
+
+
+.btn-fb {
+  color: #ffffff;
+  background-color: #428bca;
+  border-color: #357ebd;
+}
+
+.btn-fb:hover,
+.btn-fb:focus,
+.btn-fb:active,
+.btn-fb.active {
+  color: #ffffff;
+  background-color: #3276b1;
+  border-color: #285e8e;
+}
+
+
+.btn-kaplan {
+  color: #ffffff;
+  background-color: #cadb2a;
+  border-color: #bacc11;
+}
+
+.btn-kaplan:hover,
+.btn-kaplan:focus,
+.btn-kaplan:active,
+.btn-kaplan.active {
+  color: #ffffff;
+  background-color: #baca21;
+  border-color: #bacc11;
+}
