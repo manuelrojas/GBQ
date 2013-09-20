@@ -6,9 +6,24 @@ var dashboard = {
     // Application Constructor
     initialize: function() {
         this.bindEvents();
-        
-
-        
+        this.initToolBox();
+        this.loadDashboard();
+    },
+    initToolBox: function(){
+        $('td.dashboard').bind('click', function(){ dashboard.loadDashboard(); });
+        $('td.quiz').bind('click', function(){ dashboard.loadQuiz(); });
+        $('td.clazz').bind('click', function(){ dashboard.loadClasses(); });
+    },
+    loadDashboard: function(){
+        try{
+        $('.dashboard-body').load('sections/detail.html');
+        }catch(e){alert(e)}
+    },
+    loadQuiz: function(){
+        $('.dashboard-body').load('sections/quiz.html');
+    },
+    loadClasses: function(){
+        $('.dashboard-body').load('sections/classes.html');
     },
     // Bind Event Listeners
     //
